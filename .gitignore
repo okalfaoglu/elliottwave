@@ -37,15 +37,8 @@ target/
 */target/
 **/*.rs.bk
 Cargo.lock # Kütüphane ise ignore edilir, uygulama ise kalabilir (duruma göre aç/kapa)
-
-# --- Projeye Özel Build Alanları ---
-# Rust modülün derleme çıktısı
-rust/aiqtss_rs/target/
-# Nautilus Trader derleme çıktıları
-nautilus/build/
-nautilus/target/
-nautilus/nautilus_trader/*.c
-nautilus/nautilus_trader/**/*.so
+*.c
+*.so
 
 # --- Veri ve Geçici Dosyalar ---
 # Büyük veri setlerini (aggTrades vb.) git'e atmamak kritik
