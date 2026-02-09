@@ -1,0 +1,76 @@
+# --- Python Standartları ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Sanal Ortamlar (Virtual Envs) ---
+venv/
+.venv/
+env/
+.env/
+
+# --- Çevresel Değişkenler (Hassas Veri) ---
+.env
+.env.*
+!.env.example
+
+# --- Rust (Cargo) Derleme Çıktıları ---
+target/
+*/target/
+**/*.rs.bk
+Cargo.lock # Kütüphane ise ignore edilir, uygulama ise kalabilir (duruma göre aç/kapa)
+
+# --- Projeye Özel Build Alanları ---
+# Rust modülün derleme çıktısı
+rust/aiqtss_rs/target/
+# Nautilus Trader derleme çıktıları
+nautilus/build/
+nautilus/target/
+nautilus/nautilus_trader/*.c
+nautilus/nautilus_trader/**/*.so
+
+# --- Veri ve Geçici Dosyalar ---
+# Büyük veri setlerini (aggTrades vb.) git'e atmamak kritik
+tmp/
+rust/aiqtss_rs/data_cache/
+*.csv
+*.sql
+*.parquet
+*.h5
+*.hdf5
+# Ancak şema dosyalarını koru
+!aiqtss/database/schema.sql
+!aiqtss/database/schema_timescale.sql
+
+# --- IDE ve Editör Ayarları ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.DS_Store
+# Workspace dosyasını kişisel kullanıyorsan ekle, takım içinse çıkart
+# aiqtss.code-workspace
+
+# --- Loglar ve Dokümantasyon Çıktıları ---
+logs/
+*.log
+docs/_build/rust/aiqtss_rs/data_cache/*.zip
