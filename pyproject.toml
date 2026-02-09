@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ew6"
+version = "0.1.0"
+description = "EW6: Tick→Bar→Swing→Elliott Wave scan→Signals→Backtest/Trading"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "EW6 Contributors"}]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+fast = ["numba>=0.59"]
+viz = ["matplotlib>=3.8"]
+ml = ["scikit-learn>=1.3"]
+
+[project.scripts]
+ew6 = "ew6.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

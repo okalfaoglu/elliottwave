@@ -1,0 +1,32 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "timeframe": "5m",
+    "score": 0.6118884924766346,
+    "reason": "ret=0.32 mdd=0.00 sh=0.87 conf=0.99 trades=21 wf=0.84 wf_pos=1.00 wf_std=0.00"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "timeframe": "1m",
+    "score": 0.5971668251782787,
+    "reason": "ret=0.25 mdd=0.01 sh=0.93 conf=0.99 trades=30 wf=0.82 wf_pos=1.00 wf_std=0.00"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "timeframe": "5m",
+    "score": 0.5739452260245079,
+    "reason": "ret=0.19 mdd=0.01 sh=1.14 conf=0.99 trades=21 wf=0.81 wf_pos=1.00 wf_std=0.00"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "timeframe": "1m",
+    "score": 0.5568178617289625,
+    "reason": "ret=0.17 mdd=0.01 sh=0.84 conf=0.99 trades=23 wf=0.81 wf_pos=1.00 wf_std=0.00"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "timeframe": "15m",
+    "score": 0.47472064440237116,
+    "reason": "ret=0.19 mdd=0.02 sh=0.77 conf=0.99 trades=18 wf=0.00 wf_pos=0.00 wf_std=0.00"
+  }
+]

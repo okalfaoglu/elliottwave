@@ -1,0 +1,2 @@
+[console_scripts]
+ew6 = ew6.cli:main
